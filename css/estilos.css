@@ -98,11 +98,6 @@ header{
   height:600px;
   background: rgb(121,1,140);
   background: radial-gradient(circle, rgba(121,1,140,1) 0%, rgba(76,0,112,1) 40%, rgba(22,0,64,1) 100%);
-  /* background: linear-gradient(to bottom,
-  #79018C,
-  #4C0070,
-  #160040
-  ), url(../img/slider_background.jpg); */
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
@@ -114,6 +109,7 @@ nav {
   position: fixed;
   box-shadow: 0 0 10px 0 rgba(0,0,0,.5);
   z-index: 99;
+
 }
 
 .nav1{
