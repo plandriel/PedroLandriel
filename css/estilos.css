@@ -99,9 +99,13 @@ header{
   background: rgb(121,1,140);
   background: radial-gradient(circle, rgba(121,1,140,1) 0%, rgba(76,0,112,1) 40%, rgba(22,0,64,1) 100%);
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   
 >>>>>>> proyectoTest
+=======
+  
+>>>>>>> desafioBootstrap
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
@@ -159,7 +163,9 @@ nav .enlaces a:hover{
 
 /*LOGO*/
 
-.logo, .logo img{ height:80px;}
+.logo, .logo img{ 
+  height:80px;
+}
 
 
 .icono{
@@ -219,6 +225,8 @@ nav .enlaces a:hover{
 
 
 
+/*
+
 .principalHome {
   margin:auto;
   padding: var(--margenes) 0;
@@ -243,11 +251,11 @@ nav .enlaces a:hover{
   width: 50%;
 }
 
-/* 1 columna para smartphones */
+/* 1 columna para smartphones 
 .principalDer img  {
   max-width: 100%;
   }
-/* 2 columnas para tablets */
+/* 2 columnas para tablets 
 @media (max-width: 420px) {
   .principalHome {
     flex-direction: column;
@@ -256,7 +264,7 @@ nav .enlaces a:hover{
     max-width: 50%;
   }
 }
-/* 4 columnas para grandes dispositivos*/
+/* 4 columnas para grandes dispositivos
 @media (max-width: 760px) {
   .principalHome {
     flex-direction: column;
@@ -264,6 +272,88 @@ nav .enlaces a:hover{
   .principalDer img  {
     max-width: 100%;
     }
+} */
+
+/***** BOOTSTRAP - BOX ******/
+
+.icon_boxes
+{
+	width: 100%;
+	padding-top: 123px;
+	padding-bottom: 129px;
+}
+.icon_box_title
+{
+	padding-right: 50px;
+	
+}
+.icon_box_title h1
+{
+	line-height: 1.25;
+}
+.icon_box_button
+{
+	margin-top: 40px;
+  color:rgb(0, 0, 0)
+}
+.icon_box_button:hover
+{
+	background: #452b78;
+}
+.icon_box_button:hover a
+{
+	color: #FFFFFF;
+}
+.icon_box_col
+{
+	padding-top: 21px;
+}
+.icon_box_item
+{
+	margin-bottom: 63px;
+}
+.icon_box_item:last-child
+{
+	margin-bottom: 0px;
+}
+.icon_box_item h2
+{
+	margin-bottom: 21px;
+}
+.icon_box_item p
+{
+	margin-bottom: 0px;
+}
+
+.button
+{
+	display: inline-block;
+	height: 54px;
+	width: 174px;
+	text-align: center;
+	border: solid 2px #452b78;
+	background: #7648cf;
+}
+.button a
+{
+	display: block;
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 50px;
+	text-transform: uppercase;
+	color: #452b78;
+}
+
+
+
+.trans_200
+{
+	-webkit-transition: all 200ms ease;
+	-moz-transition: all 200ms ease;
+	-ms-transition: all 200ms ease;
+	-o-transition: all 200ms ease;
+	transition: all 200ms ease;
 }
 
 /* DESCRIPCION */
@@ -362,6 +452,14 @@ nav .enlaces a:hover{
     text-align: center;
   }
   
+}
+
+.descripcionBS h3, p{
+  text-align: center;
+}
+
+.descripcionBS {
+  align-items: center;
 }
 
 
@@ -603,82 +701,18 @@ nav .enlaces a:hover{
 .botones-work{
   overflow: hidden;
 }
-/*
-.botones-work li{
-  display: inline-block;
-  text-align: center;
-  margin-left: var(--espacios);
-  margin-bottom: var(--espacios-contenido);
-  padding: 6px 12px;
-  border: 1px solid var(--color1);
-  /* list-style: none; 
-  color: var(--color1);
-}
 
-.botones-work li:hover{
-  background: var(--color1);
-  color:#fff;
-  cursor: pointer;
-}
-
-.botones-work .active{
-  background: var(--color1);
-  color:#fff;
-}
-
-.galeria-work{
-  display:flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-
-.cont-work{
-  width: 31%;
-  box-shadow: 0 0 6px 0 rgba(0,0,0,.5);
-  height:300px;
-  overflow: hidden;
-  margin-bottom: var(--espacios-contenido);
-}
-
-.img-work{
-  height: 90%;
-  width: 100%;
-}
-
-.img-work img{
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-}
-
-.textos-work{
-  height: 10%;
-}
-
-.textos-work h4{
-  line-height: 30px;
-  font-weight: 300;
-}
-*/
 
 /* FORMULARIO */
 
-.contact_row
-{
-	margin-top: 119px;
-}
+/** BOOTSTRAP **/
+
+/**** 5.2 Formulario ****/
+
+
 .reply
 {
 	margin: 150px;
-  padding: 30px;
-  box-shadow: 0 0 6px 0 rgb(0 0 0 / 50%);
-  
-}
-
-.btnEnviar {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
 }
 .reply_title
 {
@@ -829,7 +863,90 @@ nav .enlaces a:hover{
 	color: #FFFFFF;
 }
 
-/* FIN FORMULARIO */
+
+
+/*********************************
+5.3 Contacto Info
+*********************************/
+
+.contact_title
+{
+	font-size: 18px;
+	color: #2e2e2e;
+}
+
+.contact_logo
+{
+	padding-left: 57px;
+	flex-basis: 50%;
+
+}
+
+.contact_logo2
+{
+	padding-left: 0px;
+	margin-top: 38px;
+}
+.contact_logo2 a
+{
+	color: #452b78;
+	line-height: 1;
+}
+.contact_info_container p
+{
+	margin-top: 39px;
+}
+.address_container
+{
+	margin-top: 51px;
+}
+.contact_info_icon
+{
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 33px;
+	height: 33px;
+	color: #FFFFFF;
+	font-size: 18px;
+	background: #452b78;
+	border-radius: 50%;
+	float: left;
+}
+.contact_info_content
+{
+	width: calc(100% - 33px);
+	padding-left: 33px;
+	float: right;
+	font-size: 15px;
+	font-weight: 400;
+	color: #000;
+}
+.city
+{
+	margin-top: -1px;
+}
+.phone
+{
+	margin-top: 12px;
+}
+.email
+{
+	margin-top: 12px;
+}
+
+.contact_row {
+  align-items: center
+}
+
+
+
+/*FIN BOOTSTRAP */
 
 
 
@@ -877,6 +994,7 @@ footer{
 
 .footerColumna p {
   color: #FFF;
+  text-align: left;
 }
 
 .marca-logo{
@@ -978,6 +1096,91 @@ footer p{
 
 /*PAGE NOSOTROS */
 
+/* ------ BOOTSTRAP ------ */
+
+
+.team
+{
+	padding-top: 116px;
+	padding-bottom: 128px;
+}
+.team_title
+{
+	margin-bottom: 186px;
+}
+.team_title h1
+{
+	margin-bottom: 27px;
+}
+.team_title p
+{
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 1.888;
+	margin-bottom: 0px;
+}
+.team_container
+{
+	height: 513px;
+	background: #f7f7f8;
+}
+.team_container:hover
+{
+	background: #452b78;
+}
+.team_container:hover div,
+.team_container:hover p,
+.team_container:hover a
+{
+	color: #FFFFFF;
+}
+.team_member_image
+{
+	width: 263px;
+	height: 263px;
+}
+.team_member_image img
+{
+	position: relative;
+	top: -71px;
+	left: -65px;
+	width: 100%;
+	height: auto;
+}
+.team_member_content
+{
+	padding-left: 40px;
+	padding-right: 30px;
+	margin-top: -50px;
+}
+.team_member_name
+{
+	font-size: 24px;
+	font-weight: 500;
+	color: #28262d;
+	margin-bottom: 5px;
+}
+.team_member_title
+{
+	font-size: 16px;
+	font-weight: 400;
+	color: #452b78;
+	margin-bottom: 30px;
+}
+.team_container p
+{
+	margin-bottom: 23px;
+}
+.team_member_link a
+{
+	font-size: 14px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #262626;
+}
+
+/* ------ TEST BOOTSTRAP ------ */
+
 .teamContenedor{
   margin:auto;
   padding: var(--margenes) 0;
@@ -1074,6 +1277,107 @@ footer p{
 
 /* PAGE SOLUCIONES - ANIMACIONES DE SECCIONES */
 
+/*----------- BOOTSTRAP ------ */
+.image_boxes
+{
+	padding-top: 130px;
+	padding-bottom: 130px;
+}
+.card
+{
+	background: #f6f4f9;
+	border: none;
+}
+.card:hover
+{
+	box-shadow: 0px 26px 38px rgba(0,0,0,0.5);
+}
+.card-body
+{
+	padding-top: 51px;
+	padding-bottom: 49px;
+	padding-left: 68px;
+	padding-right: 60px;
+}
+.card-title
+{
+	line-height: 1.5;
+	margin-bottom: 24px;
+}
+.card-text
+{
+	margin-bottom: 31px;
+}
+.card-link
+{
+	font-size: 12px;
+	text-transform: uppercase;
+	font-weight: 700;
+	color: #432b75;
+}
+.card-link:hover
+{
+	color: #5c3f95;
+}
+
+
+/* DIVISOR DE CONTAINERS */
+
+.cta_2
+{
+	padding-top: 82px;
+	padding-bottom: 78px;
+	background: #452b78;
+  background: url(../img/contenedor_backg.jpg);
+  background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+
+.cta_2_content h1
+{
+	color: #FFFFFF;
+	margin-bottom: 4px;
+}
+.cta_2_content span
+{
+	font-size: 20px;
+	color: #FFFFFF;
+	padding-left: 4px;
+}
+.cta_2_button_container
+{
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: flex-end;
+	width: 100%;
+	height: 100%;
+	padding-bottom: 13px;
+}
+.cta_2_button
+{
+	border-color: #FFFFFF;
+}
+.cta_2_button a
+{
+	color: #452b78;
+}
+.cta_2_button:hover
+{
+	background: #FFFFFF;
+}
+.cta_2_button:hover a
+{
+	color: #452b78;
+}
+
+/* -------- BOOTSTRAP -------- */
+
 .solucionesIT {
   display: grid;
   height: 1800px;
@@ -1151,6 +1455,7 @@ footer p{
 
 /*RESPONSIVE SOLUCIONES */
 
+
 @media only screen and (max-width: 2000px) {
   .soporteIT {
     flex-direction: row;
@@ -1221,7 +1526,9 @@ footer p{
   .cloud {
     flex-direction: column;
   }
-}
+} 
+
+
 
 
 
@@ -1229,6 +1536,75 @@ footer p{
 /*
 PAGE CLIENTES - GALERIA DE LOGOS
 */
+
+.divisorClientes h1
+{
+	color: #FFFFFF;
+	margin-bottom: 4px;
+  text-align: center;
+}
+.divisorClientes p
+{
+	font-size: 20px;
+	color: #FFFFFF;
+	padding-left: 4px;
+  text-align: center;
+}
+
+/* ======--- BOOTSTRAP ---====== */
+
+/* SECCION CLIENTE PERSONALIZADO */
+
+/****** TeamViewer Perzonalizado  *******/
+
+.tvCliente
+{
+	padding-top: 120px;
+	padding-bottom: 130px;
+	background: #fafbfb;
+}
+.tvCliente_row
+{
+	margin-top: 35px;
+}
+.tvCliente_col
+{
+	padding-top: 69px;
+	padding-bottom: 69px;
+}
+.tvCliente_item
+{
+	margin-bottom: 60px;
+}
+
+.tvCliente_item h2 {
+  text-align: center;
+}
+.tvCliente_col > div:last-of-type
+{
+	margin-bottom: 0px;
+}
+.tvCliente_button
+{
+	margin-top: 20px;
+}
+.tvCliente_button:hover,
+.tvCliente_button_2:hover
+{
+	background: #452b78;
+}
+.tvCliente_button:hover a,
+.tvCliente_button_2:hover a
+{
+	color: #FFFFFF;
+}
+.tvCliente_button_2
+{
+	display: none;
+}
+
+
+/* FIN BOOTSTRAP */
 
 .clientes {
   
