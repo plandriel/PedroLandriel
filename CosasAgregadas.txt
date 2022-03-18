@@ -1,0 +1,8 @@
+
+A continuación se detalla lo que se hizo en este ultimo push/update de la rama aplicandoSASS, segun las consignas del curso.
+
+1° Se aplico SASS a todo el proyecto, se adapto el CSS en el archivo SCSS.
+2° Se aplicó anidamiento a las clases.
+3° Se aplico extend, los mismos pueden verse en las lineas: 464 (mediaq responsive servicios, dentro del grid) - 1571 (MediaQ responsive clientes, dentro del grid).
+4° Se aplico Mixin (linea 45 y 51). Se usaron dos mixin, uno con el uso parecido a un extend (line 45) y el otro modificando el color de fondo y letras de un contenedor, el cual se aplica en la linea 237 en la clase icon_boxes.
+5° Se aplico SEO a las paginas. Se utilizaron las etiquetas meta description y meta keywords segun la consigna. También se revisaron los titulos de cada pagina, se corroboro que exista solo un h1 por pagina y que las imagenes tengan un ALT definido.
