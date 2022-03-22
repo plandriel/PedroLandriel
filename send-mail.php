@@ -1,6 +1,5 @@
 <?
 $Name=$_POST['name'];
-$Surname=$_POST['surname'];
 $Email=$_POST['email'];
 $subject=$_POST['subject'];
 $message=$_POST['message'];
