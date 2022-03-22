@@ -48,43 +48,43 @@ img{
 }
 
 
-@mixin fondoDivContenedor ( $colorFondo, $colorLetra, $height, $width) {
-    background-color: $colorFondo;
-    height: $height;
-    width: $width;
-    font-size: 20px;
-    margin: 1px;
-    padding: 2px;
-    color: $colorLetra;
-    border: 1px solid rgb(10, 141, 54);
-    border-radius: 15px 50px 30px;
-    h2 {
-        font-size: 3rem;
-        color: red;
-    }
-    @if background-color == black {
-        background-color: black;
-        color: white;
-        h2 {
-            color: gray;
-        }
-    }
-    @else if background-color == green {
-        background-color: green;
-        color: yellow;
-        h2 {
-            color: red
-        }
-    }
-    @else if background-color == yellow {
-        background-color: yellow;
-        color: black;
-        h2 {
-            color: red;
-        }
-    }
+// @mixin fondoDivContenedor ( $colorFondo, $colorLetra, $height, $width) {
+//     background-color: $colorFondo;
+//     height: $height;
+//     width: $width;
+//     font-size: 20px;
+//     margin: 1px;
+//     padding: 2px;
+//     color: $colorLetra;
+//     border: 1px solid rgb(10, 141, 54);
+//     border-radius: 15px 50px 30px;
+//     h2 {
+//         font-size: 3rem;
+//         color: red;
+//     }
+//     @if background-color == black {
+//         background-color: black;
+//         color: white;
+//         h2 {
+//             color: gray;
+//         }
+//     }
+//     @else if background-color == green {
+//         background-color: green;
+//         color: yellow;
+//         h2 {
+//             color: red
+//         }
+//     }
+//     @else if background-color == yellow {
+//         background-color: yellow;
+//         color: black;
+//         h2 {
+//             color: red;
+//         }
+//     }
 
-}
+// }
 
 
 
@@ -230,11 +230,11 @@ text-align: center;
 
 .icon_boxes
 {
-	// width: 100%;
+	width: 100%;
 	padding-top: 123px;
 	padding-bottom: 129px;
 
-    @include fondoDivContenedor(yellow,#FFF ,800px , 50% )
+    
 }
 .icon_box_title
 {
@@ -1290,6 +1290,10 @@ footer{
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  & img {
+    width: 70%;
+    height: 70%;
+  }
 }
 
 .secIzq {
@@ -1520,6 +1524,7 @@ PAGE CLIENTES - GALERIA DE LOGOS
 
 .tituloCliente h2 {
     text-align: center;
+    margin: 70px;
 }
 
 
@@ -1544,7 +1549,7 @@ Index de medidas
 
 @media only screen and (max-width: 2000px) {
     .clientes {
-        height: 600px;
+        height: 700px;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 300px 300px;
         grid-template-areas:

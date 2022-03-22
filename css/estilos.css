@@ -119,20 +119,9 @@ nav .enlaces a:hover {
 
 /***** BOOTSTRAP - BOX ******/
 .icon_boxes {
+  width: 100%;
   padding-top: 123px;
-  padding-bottom: 129px;
-  background-color: yellow;
-  height: 800px;
-  width: 50%;
-  font-size: 20px;
-  margin: 1px;
-  padding: 2px;
-  color: #FFF;
-  border: 1px solid #0a8d36;
-  border-radius: 15px 50px 30px; }
-  .icon_boxes h2 {
-    font-size: 3rem;
-    color: red; }
+  padding-bottom: 129px; }
 
 .icon_box_title {
   padding-right: 50px; }
@@ -920,6 +909,9 @@ footer {
   display: flex;
   flex-wrap: wrap;
   align-items: center; }
+  .soporteIT img {
+    width: 70%;
+    height: 70%; }
 
 .secIzq {
   width: 50%;
@@ -1080,7 +1072,8 @@ PAGE CLIENTES - GALERIA DE LOGOS
   margin-bottom: 10px; }
 
 .tituloCliente h2 {
-  text-align: center; }
+  text-align: center;
+  margin: 70px; }
 
 /*ANIMACION HOVER A TODOS LOS LOGOS CON HOVER */
 .cliente1:hover, .cliente2:hover, .cliente3:hover, .cliente4:hover, .cliente5:hover, .cliente6:hover {
@@ -1097,7 +1090,7 @@ Index de medidas
 */
 @media only screen and (max-width: 2000px) {
   .clientes {
-    height: 600px;
+    height: 700px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 300px 300px;
     grid-template-areas: "cliente1 cliente2 cliente3" "cliente4 cliente5 cliente6";
