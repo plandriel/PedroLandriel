@@ -14,5 +14,5 @@ mail("info@pergaminoit.com.ar","Del sitio web",$body);
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <script>alert("Su mensaje fue enviado. Gracias!");</script>
-<meta HTTP-EQUIV="REFRESH" content="0; url=https://seghma.com.ar/index.html">
+<meta HTTP-EQUIV="REFRESH" content="0; url=https://pergaminoit.com.ar/index.html">
 </head>
