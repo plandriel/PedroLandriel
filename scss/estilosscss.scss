@@ -239,8 +239,8 @@ text-align: center;
 .icon_box_title
 {
 	padding-right: 50px;
-	& h1 {
-	line-height: 1.25;
+	& h2 {
+	    line-height: 1.25;
     }
 }
 
@@ -272,6 +272,7 @@ text-align: center;
 .icon_box_item h2
 {
 	margin-bottom: 21px;
+    text-align: center;
 }
 .icon_box_item p
 {
@@ -956,6 +957,17 @@ footer{
 
 .textos>h1{font-size: 70px;}
 .textos>h2{font-size:35px;}
+
+/** RESPONSIVE HEADER TITULO **/
+
+@media screen and (max-width: 420px){
+    .textos h1{
+        font-size: 50px;
+    }
+    .textos h2{
+        font-size:25px;
+    }
+}
 
 .content-card{
     width: 48%;
