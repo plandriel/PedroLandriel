@@ -7,7 +7,7 @@ $body .= "Nombre: " . $Name . "\n";
 $body .= "Email: " . $Email . "\n";
 $body .= "Asunto: " . $subject . "\n";
 $body .= "Mensaje: " . $message . "\n";
-//replace with your email
+//Mail que uso para que lleguen los mails del sitio
 mail("info@pergaminoit.com.ar","Del sitio web",$body);
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">

@@ -155,28 +155,39 @@ nav .enlaces a:hover {
   margin-bottom: 0px; }
 
 .button {
+  margin-top: 55px;
   display: inline-block;
   height: 54px;
   width: 174px;
   text-align: center;
   border: solid 2px #452b78;
-  background: #7648cf; }
-
-.button a {
-  display: block;
+  background: transparent;
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
   font-weight: 700;
   line-height: 50px;
   text-transform: uppercase;
+  color: #452b78;
+  cursor: pointer; }
+
+button:hover {
+  background: #452b78;
   color: #FFFFFF; }
 
+/** TIEMPO DE TRANSICIONES **/
 .trans_200 {
   -webkit-transition: all 200ms ease;
   -moz-transition: all 200ms ease;
   -ms-transition: all 200ms ease;
   -o-transition: all 200ms ease;
   transition: all 200ms ease; }
+
+.trans_300 {
+  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease; }
 
 /* DESCRIPCION */
 .descripcion {
@@ -239,7 +250,7 @@ nav .enlaces a:hover {
     text-align: center;
     color: #000; }
 
-/* 1 columna para smartphones */
+/* Mediaq para objetivos */
 /* 2 columnas para tablets */
 @media (max-width: 700px) {
   .objetivos {
@@ -257,8 +268,6 @@ nav .enlaces a:hover {
 
 /*FIN OBJETIVOS */
 /* SERVICIOS DESTACADOS */
-/* .contenedorServicios {
-} */
 .servicios {
   display: grid;
   color: white;
@@ -745,6 +754,8 @@ footer {
   padding-left: 40px;
   padding-right: 30px;
   margin-top: -50px; }
+  .team_member_content p {
+    text-align: left; }
 
 .team_member_name {
   font-size: 24px;
@@ -800,9 +811,6 @@ footer {
     width: 100%;
     height: 100%;
     object-fit: cover; }
-
-.people {
-  height: 80%; }
 
 .texto-team {
   height: 20%;

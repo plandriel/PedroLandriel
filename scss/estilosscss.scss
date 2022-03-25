@@ -190,17 +190,6 @@ text-align: center;
     }
 }
 
-// h1{
-// font-size:80px;
-// animation-duration: 1s;
-// }
-
-// .textos>h2{
-//   font-size: 30px;
-//   font-weight: 300;
-//   animation-duration: 2s;
-// }
-
 /* Main */
 
 .contenedor{
@@ -281,25 +270,29 @@ text-align: center;
 
 .button
 {
+	margin-top: 55px;
 	display: inline-block;
 	height: 54px;
 	width: 174px;
 	text-align: center;
 	border: solid 2px #452b78;
-	background: #7648cf;
-}
-.button a
-{
-	display: block;
+	background: transparent;
 	font-family: 'Roboto', sans-serif;
 	font-size: 14px;
 	font-weight: 700;
 	line-height: 50px;
 	text-transform: uppercase;
-	color: #FFFFFF;
+	color: #452b78;
+	cursor: pointer
 }
 
+button:hover {
+	background: #452b78;
+	color: #FFFFFF;
+    }
 
+
+/** TIEMPO DE TRANSICIONES **/
 
 .trans_200
 {
@@ -308,6 +301,15 @@ text-align: center;
 	-ms-transition: all 200ms ease;
 	-o-transition: all 200ms ease;
 	transition: all 200ms ease;
+}
+
+.trans_300
+{
+	-webkit-transition: all 300ms ease;
+	-moz-transition: all 300ms ease;
+	-ms-transition: all 300ms ease;
+	-o-transition: all 300ms ease;
+	transition: all 300ms ease;
 }
 
 /* DESCRIPCION */
@@ -388,7 +390,7 @@ text-align: center;
 }
 
 
-/* 1 columna para smartphones */
+/* Mediaq para objetivos */
 
 
 /* 2 columnas para tablets */
@@ -417,8 +419,6 @@ text-align: center;
 
 /* SERVICIOS DESTACADOS */
 
-/* .contenedorServicios {
-} */
 
 .servicios{
     display: grid;
@@ -623,7 +623,7 @@ text-align: center;
 /* FIN DIV QUE HACEMOS */
 
 .botones-work{
-  overflow: hidden;
+    overflow: hidden;
 }
 
 
@@ -862,15 +862,15 @@ footer{
     @include fondoDiv($colorbg1,$colorbg2);
     p{
         margin-top:$espacios;
-      }
+    }
 }
 
 .footerContenedor {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  justify-content: space-around;
-  align-items: stretch;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+    align-items: stretch;
 }
 
 .footerColumna {
@@ -945,15 +945,6 @@ footer{
     }
 }
 
-//   .enlaces a{
-//     display: block;
-//     width: 100%;
-//     height: 50px;
-//     padding: 20px;
-//     text-align: center;
-//     background: #34495e;
-//     color:#fff;
-//   }
 
 .textos>h1{font-size: 70px;}
 .textos>h2{font-size:35px;}
@@ -1055,6 +1046,9 @@ footer{
 	padding-left: 40px;
 	padding-right: 30px;
 	margin-top: -50px;
+    p {
+        text-align: left;
+    }
 }
 .team_member_name {
 	font-size: 24px;
@@ -1093,7 +1087,6 @@ footer{
     }
     p {
         font-size: 25px;
-  
         margin-bottom: 40px;
     }
 }
@@ -1125,9 +1118,6 @@ footer{
     }
 }
 
-.people{
-  height: 80%;
-}
 
 
 .texto-team{
